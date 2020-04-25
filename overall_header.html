@@ -238,7 +238,7 @@
 <body id="phpbb">
   <!-- BEGIN hitskin_preview -->
   <div id="hitskin_preview" style="display: block;">
-    <h1><img src="https://illiweb.com/fa/hitskin/hitskin_logo.png" alt="" /> <em>Hit</em>skin.com</h1>
+    <h1><img src="https://2img.net/illiweb.com/fa/hitskin/hitskin_logo.png" alt="" /> <em>Hit</em>skin.com</h1>
     <div class="content">
       <p>
         {hitskin_preview.L_THEME_SITE_PREVIEW}
@@ -278,26 +278,11 @@
             </a>
 
             <div class="navbar">
-              <div class="inner"><span class="corners-top"><span></span></span>
+              <div class="inner nav-inner">
 
                 <ul class="linklist navlinks{NAVBAR_BORDERLESS}">
                   <li>{GENERATED_NAV_BAR}</li>
                 </ul>
-
-                <!-- BEGIN switch_search_box -->
-                <div id="search-box">
-                  <form method="get" action="{ACTION_SEARCH}" id="search">
-                    <p class="nomargin"><input type="text" name="search_keywords" id="keywords" maxlength="128"
-                        class="inputbox search" value="{L_SEARCH}..."
-                        onclick="if (this.value == '{L_SEARCH}...') this.value = '';"
-                        onblur="if (this.value == '') this.value = '{L_SEARCH}...';" />
-                      {JS_SESSION_ID_INPUT}
-                      <input class="button2" type="submit" value="{L_SEARCH}" /></p>
-                  </form>
-                </div>
-                <!-- END switch_search_box -->
-
-                <span class="corners-bottom"><span></span></span>
               </div>
             </div>
 
