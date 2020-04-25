@@ -121,21 +121,21 @@
   </script>
   <!-- END switch_ticker_new -->
 
-  <script type="text/javascript">//<![CDATA[
+  <script type="text/javascript">
     $(document).ready(function () {
-			< !--BEGIN switch_enable_pm_popup-- >
+			// BEGIN switch_enable_pm_popup
         pm = window.open('{U_PRIVATEMSGS_POPUP}', '_faprivmsg', 'HEIGHT=225,resizable=yes,WIDTH=400');
       if (pm != null) {
         pm.focus();
       }
-			< !--END switch_enable_pm_popup-- >
-			< !--BEGIN switch_report_popup-- >
+			// END switch_enable_pm_popup
+			// BEGIN switch_report_popup
         report = window.open('{switch_report_popup.U_REPORT_POPUP}', '_phpbbreport', 'HEIGHT={switch_report_popup.S_HEIGHT},resizable=yes,scrollbars=no,WIDTH={switch_report_popup.S_WIDTH}');
       if (report != null) {
         report.focus();
       }
-			< !--END switch_report_popup-- >
-			< !--BEGIN switch_ticker-- >
+			// END switch_report_popup
+			// BEGIN switch_ticker
         $(document).ready(function () {
           Ticker.start({
             height: { switch_ticker.HEIGHT },
@@ -145,15 +145,15 @@
             pause: { switch_ticker.STOP_TIME }
           });
         });
-			< !--END switch_ticker-- >
+			// END switch_ticker
 		});
 
-		< !--BEGIN switch_login_popup-- >
+		// BEGIN switch_login_popup
 		var logInPopUpLeft, logInPopUpTop, logInPopUpWidth = { LOGIN_POPUP_WIDTH },
       logInPopUpHeight = { LOGIN_POPUP_HEIGHT }, logInBackgroundResize = true, logInBackgroundClass = false;
-		< !--END switch_login_popup-- >
+		// END switch_login_popup
 
-		< !--BEGIN switch_login_popup-- >
+		// BEGIN switch_login_popup
       $(document).ready(function () {
         $(window).resize(function () {
           var windowWidth = document.documentElement.clientWidth;
@@ -165,8 +165,7 @@
           });
         });
       });
-		< !--END switch_login_popup-- >
-		//]]>
+		// END switch_login_popup
   </script>
   {GREETING_POPUP}
   <style type="text/css">
@@ -181,33 +180,25 @@
       display: inline !important;
     }
 
-    < !-- BEGIN switch_ticker_new -->.jcarousel-skin-tango .jcarousel-item {
+    /* BEGIN switch_ticker_new */
+    .jcarousel-skin-tango .jcarousel-item {
       text-align: center;
       width: 10px;
     }
 
     .jcarousel-skin-tango .jcarousel-item-horizontal {
-      margin-right: {
-        switch_ticker.SPACING
-      }
-
-      px;
+      margin-right: { switch_ticker.SPACING } px;
     }
 
     .jcarousel-skin-tango .jcarousel-item-vertical {
-      margin-bottom: {
-        switch_ticker.SPACING
-      }
-
-      px;
+      margin-bottom: { switch_ticker.SPACING } px;
     }
 
-    < !-- END switch_ticker_new -->
+    /*END switch_ticker_new */
   </style>
   {HOSTING_JS}
   <!-- BEGIN google_analytics_code -->
   <script type="text/javascript">
-      //<![CDATA[
       (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
           (i[r].q = i[r].q || []).push(arguments)
@@ -224,13 +215,11 @@
     ga('send', 'pageview');
     ga('set', 'anonymizeIp', true);
 
-		< !--BEGIN google_analytics_code_bis-- >
+		// BEGIN google_analytics_code_bis
       ga('create', '{G_ANALYTICS_ID_BIS}', 'auto', 'bis');
     ga('bis.send', 'pageview');
     ga('bis.set', 'anonymizeIp', true);
-		< !--END google_analytics_code_bis-- >
-		//]]>
-
+		// END google_analytics_code_bis
   </script>
   <!-- END google_analytics_code -->
 </head>

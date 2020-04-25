@@ -16,6 +16,8 @@ a:link {
     text-decoration: none;
 }
 
+.mainmenu { margin: auto; }
+
 /* The site header image */
 .headerbar {
   width: 100%;
@@ -42,17 +44,19 @@ ul.navlinks {
 }
 
 ul.linklist li {
-     display: inline-block;
+    display: inline-flex;
     font-size: 12px;
     line-height: 2.2em;
     list-style-type: none;
-    width: auto;
+    width: 100px;
     border: 2px solid #6b5e05;
-    padding: 12px;
+    padding: 6px;
     margin: 6px;
     border-radius: 6px;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(25, 24, 24));
     color: #d4cdbd;
+    min-height: 40px;
+    text-align: center;
 }
 
 .panel { background-color: rgba(0,0,0,0); }
