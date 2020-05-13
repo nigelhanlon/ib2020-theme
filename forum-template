@@ -1,0 +1,63 @@
+<!-- BEGIN forumrow -->
+<li class="row">
+
+</li>
+
+
+
+<div class="accordion">
+  <h3 class="category-label">
+    <span class="category-label-span">{catrow.forumrow.FORUM_NAME}</span>
+    <div class="counters">
+      <span class="info-label">{catrow.forumrow.POSTS} Posts</span>
+      <span class="info-label">{catrow.forumrow.TOPICS} Threads</span>
+    </div>
+  </h3>
+  <div class="forum-desc">
+    <p>{catrow.forumrow.FORUM_DESC}</p>
+    <button class="view-forum"><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">View Forum</a></button>
+  </div>
+</div>
+
+
+<div class="one">
+  <ul>
+    <li><a href="{catrow.forumrow.U_VIEWFORUM}" class="forumtitle">{catrow.forumrow.FORUM_NAME}</a></li>
+    <li>{catrow.forumrow.FORUM_DESC}</li>
+    <!-- BEGIN switch_moderators_links -->
+    <li>{catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS}</li>
+    <!-- END switch_moderators_links -->
+    <li>{catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}</li>
+    <li>{forumrow.L_SUBFORUM_STR}</li>
+    <li>{forumrow.SUBFORUMS}</li>
+    <li>{catrow.forumrow.TOPICS}</li>
+    <li>{L_TOPICS}</li>
+    <li>{catrow.forumrow.POSTS}</li>
+    <li>{forumrow.SUBFORUMS}</li>
+    <!-- BEGIN switch_topic_title -->
+    <li><a href="{catrow.forumrow.U_LATEST_TOPIC}"
+        title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a></li>
+    <!-- END switch_topic_title -->
+    <li>{catrow.forumrow.USER_LAST_POST}</li>
+  </ul>
+</div>
+
+
+
+<ul>
+  <li><a href="/c2-out-of-character" class="forumtitle">Out of Character</a></li>
+  <li>This is the place to discuss out of character matters and concerns. You will also find bios and site
+    announcements.
+    <br><br></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>Topics</li>
+  <li>2</li>
+  <li></li>
+  <li><a href="/t1-this-is-the-law" title="This is the law">This is the law...</a></li>
+  <li>Yesterday at 4:40 pm<br><strong><a href="/u2" class="gensmall">mapwolf</a></strong>&nbsp;<a
+      href="/t1-this-is-the-law#2" class="last-post-icon"><img class="sprite-icon_topic_latest"
+        src="https://2img.net/i/fa/empty.gif" alt="View latest post" title="View latest post"></a></li>
+</ul>
