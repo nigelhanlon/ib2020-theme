@@ -50,18 +50,19 @@
 {CHATBOX_TOP}
 {BOARD_INDEX}
 
-<!-- BEGIN disable_viewonline -->
+<div class="info-pane">
+  <!-- BEGIN disable_viewonline -->
+  <!-- BEGIN switch_viewonline_link -->
+  <div class="h3"><a href="{U_VIEWONLINE}" rel="nofollow">{L_WHO_IS_ONLINE}</a></div>
+  <!-- END switch_viewonline_link -->
 
-<!-- BEGIN switch_viewonline_link -->
-<div class="h3"><a href="{U_VIEWONLINE}" rel="nofollow">{L_WHO_IS_ONLINE}</a></div>
-<!-- END switch_viewonline_link -->
+  <!-- BEGIN switch_viewonline_nolink -->
+  <div class="h3">{L_WHO_IS_ONLINE}</div>
+  <!-- END switch_viewonline_nolink -->
 
-<!-- BEGIN switch_viewonline_nolink -->
-<div class="h3">{L_WHO_IS_ONLINE}</div>
-<!-- END switch_viewonline_nolink -->
+  <img src="{L_ONLINE_IMG}" id="i_whosonline" alt="{L_WHO_IS_ONLINE}" class="img-whois" /><br/>
 
-<img src="{L_ONLINE_IMG}" id="i_whosonline" alt="{L_WHO_IS_ONLINE}" class="img-whois" />
-<p>{TOTAL_USERS_ONLINE}<br />
+  {TOTAL_USERS_ONLINE}<br />
   {RECORD_USERS}
 
   <br />
@@ -74,42 +75,28 @@
   <br />
   <em>{LEGEND}&nbsp;:&nbsp;{GROUP_LEGEND}</em>
 
-</p>
-<div class="clear"></div>
+    <div class="clear"></div>
 
-<!-- BEGIN switch_statistics_link -->
-<div class="h3"><a href="{U_STATISTICS}" rel="nofollow">{L_STATISTICS}</a></div>
-<!-- END switch_statistics_link -->
+  <!-- BEGIN switch_statistics_link -->
+  <div class="h3"><a href="{U_STATISTICS}" rel="nofollow">{L_STATISTICS}</a></div>
+  <!-- END switch_statistics_link -->
 
-<!-- BEGIN switch_statistics_nolink -->
-<div class="h3">{L_STATISTICS}</div>
-<!-- END switch_statistics_nolink -->
+  <!-- BEGIN switch_statistics_nolink -->
+  <div class="h3">{L_STATISTICS}</div>
+  <!-- END switch_statistics_nolink -->
 
-<p class="page-bottom">
-  {TOTAL_POSTS}
-</p>
-<p class="page-bottom">
-  {TOTAL_USERS}
-</p>
-<p class="page-bottom">
-  {NEWEST_USER}
-</p>
-<!-- BEGIN switch_chatbox_activate -->
-<div class="h3"><a href="{S_JOIN_CHAT}" target="ChatBox">{CHATBOX_NAME}</a></div>
-<div class="page-bottom">
-  {TOTAL_CHATTERS_ONLINE}&nbsp;:&nbsp;
-  {CHATTERS_LIST}<br />
+  <p class="page-bottom">
+    {TOTAL_POSTS}
+  </p>
+  <p class="page-bottom">
+    {TOTAL_USERS}
+  </p>
+  <p class="page-bottom">
+    {NEWEST_USER}
+  </p>
 </div>
-<!-- BEGIN switch_chatbox_popup -->
-<div id="chatbox_popup"></div>
-<script type="text/javascript">
-  insertChatBoxPopup('{disable_viewonline.switch_chatbox_activate.switch_chatbox_popup.U_FRAME_CHATBOX}', '{L_CLICK_TO_JOIN_CHAT}');
-</script>
-<!-- END switch_chatbox_popup -->
-<!-- END switch_chatbox_activate -->
-<!-- END disable_viewonline -->
 
-{CHATBOX_BOTTOM}
+<!-- END disable_viewonline -->
 
 <!-- BEGIN switch_user_login_form_footer -->
 <div class="panel">
@@ -142,7 +129,7 @@
 <br style="clear:both" />
 
 <!-- BEGIN switch_legend -->
-<ul id="picture_legend">
+<ul style="display:none" id="picture_legend">
   <li><img src="{FORUM_NEW_IMG}" alt="{L_NEW_POSTS}" />{L_NEW_POSTS}</li>
   <li><img src="{FORUM_IMG}" alt="{L_NO_NEW_POSTS}" />{L_NO_NEW_POSTS}</li>
   <li><img src="{FORUM_LOCKED_IMG}" alt="{L_FORUM_LOCKED}" />{L_FORUM_LOCKED}</li>
