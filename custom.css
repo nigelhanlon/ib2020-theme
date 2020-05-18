@@ -364,3 +364,10 @@ table.table1 .edit {
 table.table1 .alignv {
   vertical-align: top;
 }
+
+/*  Forum Listings */
+
+.buttons div.post-icon {
+  height: 10px;
+  width: auto;
+}
