@@ -100,7 +100,7 @@ ul.linklist li {
 .forabg {
   background-color: rgba(0, 0, 0, 1);
   margin-top: 50px;
-  max-width: 75%;
+  max-width: 85%;
   margin: 0 auto;
   margin-bottom: 50px;
   background-image: none;
@@ -215,9 +215,10 @@ h2 {
   border: 2px solid #6b5e05;
   margin-bottom: 20px;
   border-radius: 6px;
-  max-width: 80%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
+  min-height: 150px;
 }
 
 .panel {
@@ -227,22 +228,28 @@ h2 {
   border: 2px solid #6b5e05;
   margin-bottom: 20px;
   border-radius: 6px;
-  max-width: 80%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
-label { color: #d4cdbd; }
+label {
+  color: #d4cdbd;
+}
 
 .forumbg {
   background-color: #000;
   background-image: none;
-  max-width: 90%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   border: 2px solid #6b5e05;
   border-radius: 6px;
+}
+
+#main-content > div.forumbg.announcement {
+  margin-bottom: 20px;
 }
 
 .info {
@@ -262,7 +269,9 @@ html>body table.table1 {
   width: 100%;
 }
 
-table tbody tr td a span { color: #fff; }
+table tbody tr td a span {
+  color: #fff;
+}
 
 table.table1 thead th {
   font-weight: normal;
@@ -295,7 +304,7 @@ table.table1 td {
 
 table.table1 tbody td {
   padding: 5px;
-  border-top:2px solid #6b5e05;
+  border-top: 2px solid #6b5e05;
 }
 
 table.table1 tbody th {
@@ -370,4 +379,41 @@ table.table1 .alignv {
 .buttons div.post-icon {
   height: 10px;
   width: auto;
+}
+
+
+/* View Forum Body */
+
+p.path {
+  clear: left;
+  margin-left: 0px;
+  padding-top: 20px;
+}
+
+#main-content>div.forumbg.announcement>div>span.corners-top {
+  display: none;
+}
+
+#main-content>div.forumbg.announcement>div>span.corners-bottom {
+  display: none;
+}
+
+li.header dd, li.header dt {
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #d4cdbd;
+  line-height: 1.3em;
+  font-size: 16px;
+  padding: 0 0 4px 3px;
+  font-family: 'IM Fell English SC', serif;
+
+  /* border-left-width: 0;
+  color: #fff;
+  font-family: Arial,Helvetica,sans-serif,Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  margin: 2px 0 4px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  text-transform: uppercase; */
 }
