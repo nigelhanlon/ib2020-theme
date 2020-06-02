@@ -97,14 +97,20 @@
       <dl>
         <dt>
           {postrow.displayed.POSTER_AVATAR}
-          <br /><strong style="font-size:1.2em">{postrow.displayed.POSTER_NAME}</strong>
+          <br />
         </dt>
+        <dd>
+          <dt>
+            <strong style="font-size:1.2em; color: #fff;">{postrow.displayed.POSTER_NAME}</strong>
+          </dt>
+        </dd>
         <dd>{postrow.displayed.POSTER_RANK_NEW}{postrow.displayed.RANK_IMAGE}</dd>
-        <dd><br /></dd>
         <dd>
           <!-- BEGIN profile_field -->
-          {postrow.displayed.profile_field.LABEL}
-          {postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}
+          <div class="poster-meta">
+            {postrow.displayed.profile_field.LABEL}
+            {postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}
+          </div>
           <!-- END profile_field -->
           {postrow.displayed.POSTER_RPG}
         </dd>
@@ -116,8 +122,6 @@
         </dd>
       </dl>
     </div>
-    <br/>
-    <hr/>
     <div class="postbody">
 
       <ul class="profile-icons">

@@ -248,7 +248,7 @@ label {
   border-radius: 6px;
 }
 
-#main-content > div.forumbg.announcement {
+#main-content>div.forumbg.announcement {
   margin-bottom: 20px;
 }
 
@@ -398,7 +398,8 @@ p.path {
   display: none;
 }
 
-li.header dd, li.header dt {
+li.header dd,
+li.header dt {
   font-weight: normal;
   text-transform: capitalize;
   color: #d4cdbd;
@@ -418,7 +419,7 @@ li.header dd, li.header dt {
 }
 
 .go-right {
-  float:right;
+  float: right;
 }
 
 .go-left {
@@ -449,17 +450,55 @@ li.header dd, li.header dt {
   margin: 5px 0 0;
   min-height: 80px;
   position: relative;
-  width: 100%;
+  max-width: 20%;
   word-wrap: break-word;
-  margin-bottom: 12px;
+  border: none;
+  display: block;
 }
 
 .postbody {
-  clear: both;
+  clear: none;
   color: #536482;
-  float: right;
   line-height: 1.48em;
   padding: 0px;
-  width: 100%;
-  margin-top:12px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.online {
+  background-image: none;
+}
+
+.postprofile > dl > dt > a > img {
+  border-radius: 6px;
+  border: 2px solid #6b5e05;
+  margin-top: 2px;
+  max-width: 100px;
+}
+
+dd {
+  margin: 10px;
+  color: #d4cdbd;
+}
+
+dd span {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.label > span {
+  color: #d4cdbd !important;
+}
+
+.postprofile > dl > dt:nth-child(3) > strong > a > span > strong {
+  color: #fff;
+}
+
+.postbody ul.profile-icons {
+  float: right;
+  list-style: none;
+  margin-top: -5px;
+  padding: 0;
+  width: auto;
+  margin-right: -18px;
 }
