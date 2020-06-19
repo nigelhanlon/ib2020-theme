@@ -502,3 +502,23 @@ dd span {
   width: auto;
   margin-right: -18px;
 }
+
+dl.icon {
+  background-position: 18px 24%;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 35px;
+}
+
+dd.lastpost {
+  font-size: 1.1em;
+  width: inherit;
+}
+
+label input {
+  vertical-align: unset;
+}
+
+.content {
+  padding-bottom: 12px;
+}
