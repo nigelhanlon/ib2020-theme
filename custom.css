@@ -522,3 +522,16 @@ label input {
 .content {
   padding-bottom: 12px;
 }
+
+/*  Profile page fixes */
+#tabs {
+  line-height: normal;
+  margin: 20px 0px -2px 66px;
+  border-left: solid 2px #6b5e05;
+}
+
+fieldset dl:hover dt label {
+	color: #ffffff;
+}
+
+#fym_banner { width: 360px; }
