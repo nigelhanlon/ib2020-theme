@@ -535,3 +535,30 @@ fieldset dl:hover dt label {
 }
 
 #fym_banner { width: 360px; }
+
+#profile-advanced-details {
+  height: 940px;
+  width: 100%;
+  margin-left: 66px;
+  margin-top: 1px;
+}
+
+#profile-advanced-right {
+  float: right;
+  width: 300px;
+  left: -32px;
+  position: relative;
+}
+
+#profile-advanced-left {
+  margin-right: 300px;
+  margin-top: 36px;
+}
+
+h1.page-title {
+  color: #fff;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0.5em 0.8em 1.3em 3.2em;
+}
