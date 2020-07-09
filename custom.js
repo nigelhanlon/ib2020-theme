@@ -13,7 +13,7 @@ setTimeout(function navCleanup() {
     }
   });
 
-}, 750);
+}, 250);
 
 
 // END CUSTOM SCRIPT
