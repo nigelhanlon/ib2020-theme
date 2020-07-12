@@ -166,7 +166,7 @@ li.row:hover {
 h2 {
   color: #1f8eea;
   font-family: 'IM Fell English SC', serif;
-  font-size: 2em;
+  font-size: 24px;
   font-weight: 400;
   margin: .8em 0 .2em;
   padding-bottom: 10px;
@@ -561,4 +561,17 @@ h1.page-title {
   font-size: 2em;
   font-weight: 400;
   margin: 0.5em 0.8em 1.3em 3.2em;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    font-size: 16px;
+}
+
+.forum-title {
+    margin: 0.5em 0.8em 1.3em 0em;
 }
