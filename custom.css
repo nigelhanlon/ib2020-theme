@@ -178,13 +178,13 @@ h2 {
 
 .module {
   background-color: #000;
-  color: #536482;
+  color: #ffffff;
   margin-bottom: 4px;
   overflow: hidden;
   padding: 10px;
   border: 2px solid #6b5e05;
   font-family: 'IM Fell English SC', serif;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 10px;
 }
 
@@ -427,9 +427,9 @@ li.header dt {
 }
 
 .pathname-box {
-  float: left;
-  margin-left: 0px;
-  margin-top: 18px;
+    float: right;
+    margin-left: 0px;
+    margin-top: 40px;
 }
 
 .post {
@@ -445,7 +445,7 @@ li.header dt {
 }
 
 .postprofile {
-  color: #536482;
+  color: #ffffff;
   display: inline;
   margin: 5px 0 0;
   min-height: 80px;
@@ -458,11 +458,22 @@ li.header dt {
 
 .postbody {
   clear: none;
-  color: #536482;
+  color: #ffffff;
   line-height: 1.48em;
   padding: 0px;
   width: 80%;
   margin-top: 10px;
+}
+
+.postbody .topic-title {
+  border: none;
+  color: #fff;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0px 0px 0px -8px !important;
+  text-transform: none;
 }
 
 .online {
@@ -521,6 +532,7 @@ label input {
 
 .content {
   padding-bottom: 12px;
+  color: #ffffff;
 }
 
 /*  Profile page fixes */
@@ -573,5 +585,5 @@ h1.page-title {
 }
 
 .forum-title {
-    margin: 0.5em 0.8em 1.3em 0em;
+    margin: 0.5em 0.8em 1.3em 0em !important;
 }
