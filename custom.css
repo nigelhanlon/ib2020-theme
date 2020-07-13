@@ -77,7 +77,7 @@ ul.navlinks {
 
 ul.linklist li {
   display: inline-flex;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 2.2em;
   list-style-type: none;
   width: 100px;
@@ -100,7 +100,7 @@ ul.linklist li {
 .forabg {
   background-color: rgba(0, 0, 0, 1);
   margin-top: 50px;
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
   background-image: none;
@@ -141,7 +141,7 @@ li.row {
   float: left;
   overflow: hidden;
   width: 180px;
-  margin-left: 100px;
+  margin-left: 16px;
 }
 
 .ui-accordion-header {
@@ -215,7 +215,7 @@ h2 {
   border: 2px solid #6b5e05;
   margin-bottom: 20px;
   border-radius: 6px;
-  max-width: 85%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   min-height: 150px;
@@ -228,7 +228,7 @@ h2 {
   border: 2px solid #6b5e05;
   margin-bottom: 20px;
   border-radius: 6px;
-  max-width: 85%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   height:100%;
@@ -241,7 +241,7 @@ label {
 .forumbg {
   background-color: #000;
   background-image: none;
-  max-width: 85%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -436,7 +436,7 @@ li.header dd, li.header dt {
   margin-bottom: 20px;
   border-radius: 6px;
   padding: 0 10px;
-  max-width: 85%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -465,7 +465,7 @@ li.header dd, li.header dt {
 .postbody .topic-title {
   border: none;
   color: #fff;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'IM Fell English SC', serif;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 120%;
@@ -480,8 +480,9 @@ li.header dd, li.header dt {
 .postprofile>dl>dt>a>img {
   border-radius: 6px;
   border: 2px solid #6b5e05;
-  margin-top: 2px;
-  max-width: 100px;
+  margin-top: -2px;
+  max-width: 85px;
+  margin-left: -16px;
 }
 
 dd {
@@ -577,7 +578,7 @@ fieldset dl:hover dt label {
 
 h1.page-title {
   color: #fff;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'IM Fell English SC', serif;
   font-size: 2em;
   font-weight: 400;
   margin: 0.5em 0.8em 1.3em 3.2em;
@@ -602,18 +603,6 @@ table tbody tr td a span {
   color: #fff !important;
   font-size: 10px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
-.content div table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.content div div {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 .cat-forum-icon {
@@ -653,4 +642,23 @@ a.shadow {
 
 .postprofile img {
   max-width: 140px;
+}
+
+.postbody .content {
+    overflow: auto;
+}
+
+a.top-link {
+  font-size: 14px;
+  padding: 12px;
+}
+
+.lastpost span {
+    position: relative;
+    top: -5px;
+}
+
+.ui-widget {
+    font-family: IM Fell English SC, sans-serif;
+    font-size: 16px;
 }
