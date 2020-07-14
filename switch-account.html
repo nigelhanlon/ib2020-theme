@@ -1,0 +1,35 @@
+<script type="text/javascript">
+  function switchAccounts() {
+    jQuery.get(document.getElementById('logout').href, function () {
+      jQuery.post('/login', 'login=1&username=' + document.getElementById('switch_uname').value + '&password=' + document.getElementById('switch_pass').value, function () {
+        window.location.reload();
+      });
+    });
+  }
+
+  function enableSwitcher() {
+    jQuery('#switcherForm').show()
+    jQuery('#enableSwitcher').hide()
+  }
+</script> <style>
+  .switcher-input {
+    width: 155px;
+    padding: 4px;
+    margin: 4px 0px 4px 0px;
+  }
+</style>
+<hr />
+
+<center>
+
+	<button id="enableSwitcher" onclick="enableSwitcher()">
+		 Enable
+	</button>
+</center>
+
+<form id="switcherForm" style="display:none;">
+	   <input class="switcher-input" type="text" id="switch_uname" /><br /> <input class="switcher-input" type="password" id="switch_pass" />  <br />
+	<center>
+		     <input type="button" onclick="switchAccounts();" value="Switch Accounts" />
+	</center>
+</form>
